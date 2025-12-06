@@ -382,6 +382,23 @@ input, textarea, select {
     background: var(--gray-800);
 }
 
+/* Fix: Mobile menu links always visible (white on dark background) */
+@media (max-width: 992px) {
+    .nav__menu .nav__link,
+    .header--dark .nav__menu .nav__link,
+    .header--dark.scrolled .nav__menu .nav__link,
+    .header.scrolled .nav__menu .nav__link {
+        color: #ffffff !important;
+    }
+
+    .nav__menu .nav__link:hover,
+    .nav__menu .nav__link.active,
+    .header--dark .nav__menu .nav__link:hover,
+    .header--dark .nav__menu .nav__link.active {
+        color: var(--gold) !important;
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -646,20 +663,19 @@ input, textarea, select {
     font-family: var(--font-display);
     font-size: clamp(3.5rem, 10vw, 7rem);
     font-weight: 700;
-    background: var(--gradient-main);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #FF6B00;
     line-height: 1.1;
+    text-shadow: 0 2px 20px rgba(255, 107, 0, 0.3);
 }
 
 .hero__subtitle {
     font-family: var(--font-display);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: var(--gold);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     animation: fadeInUp 1s var(--ease-out) 0.5s both;
+    letter-spacing: 1px;
 }
 
 .hero__description {
@@ -2902,17 +2918,38 @@ input, textarea, select {
         right: -100%;
         width: 280px;
         height: 100vh;
+        height: 100dvh;
         background: var(--dark);
         flex-direction: column;
         justify-content: flex-start;
-        padding: 100px 30px 40px;
-        transition: var(--transition-normal);
-        z-index: 1000;
-        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+        padding: 80px 24px 40px;
+        transition: right 0.4s var(--ease-out);
+        z-index: 9999;
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
     }
 
     .nav__menu.active {
         right: 0;
+    }
+
+    /* Menu Overlay */
+    .nav__menu::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    .nav__menu.active::before {
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .nav__list {
@@ -2926,17 +2963,26 @@ input, textarea, select {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
+    .nav__item:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
     .nav__link {
-        color: var(--white);
-        font-size: 1.1rem;
+        color: var(--white) !important;
+        font-size: 1rem;
         display: block;
-        padding: 18px 0;
+        padding: 16px 0;
         width: 100%;
+        font-weight: 500;
     }
 
     .nav__link:hover,
     .nav__link.active {
-        color: var(--gold);
+        color: var(--gold) !important;
+    }
+
+    .nav__link::after {
+        display: none;
     }
 
     .nav__close {
@@ -2944,16 +2990,17 @@ input, textarea, select {
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 40px;
-        height: 40px;
-        font-size: 1.5rem;
+        top: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        font-size: 1.25rem;
         color: var(--white);
         cursor: pointer;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
         transition: var(--transition-fast);
+        z-index: 10;
     }
 
     .nav__close:hover {
@@ -2963,19 +3010,25 @@ input, textarea, select {
 
     .nav__toggle {
         display: flex;
-        padding: 8px;
-        background: rgba(255, 255, 255, 0.1);
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.15);
         border-radius: 8px;
+        cursor: pointer;
+        z-index: 100;
     }
 
     .nav__toggle span {
         width: 22px;
         height: 2px;
         background: var(--white);
+        border-radius: 2px;
+        transition: var(--transition-fast);
     }
 
     .header--dark .nav__toggle {
-        background: rgba(0, 0, 0, 0.05);
+        background: rgba(0, 0, 0, 0.08);
     }
 
     .header--dark .nav__toggle span {
@@ -2983,26 +3036,27 @@ input, textarea, select {
     }
 
     .header.scrolled .nav__toggle {
-        background: rgba(0, 0, 0, 0.05);
+        background: rgba(0, 0, 0, 0.08);
     }
 
     .header.scrolled .nav__toggle span {
         background: var(--gray-800);
     }
 
-    /* Hide CTA on mobile */
-    .nav__cta {
+    /* Hide CTA in header on mobile */
+    .header .nav__cta {
         display: none;
     }
 
-    /* Add CTA inside menu */
+    /* CTA inside menu */
     .nav__menu .nav__cta {
         display: flex;
-        margin-top: 30px;
+        margin-top: 24px;
         width: 100%;
         justify-content: center;
         background: var(--gradient-gold);
         color: var(--white);
+        padding: 14px 24px;
     }
 
     .about__wrapper,
@@ -3285,12 +3339,36 @@ input, textarea, select {
 
     .nav__toggle {
         padding: 8px;
-        gap: 5px;
+        gap: 4px;
     }
 
     .nav__toggle span {
-        width: 20px;
+        width: 18px;
         height: 2px;
+    }
+
+    .nav__menu {
+        width: 100%;
+        max-width: 300px;
+        padding: 70px 20px 30px;
+    }
+
+    .nav__close {
+        top: 16px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+    }
+
+    .nav__link {
+        padding: 14px 0;
+        font-size: 0.95rem;
+    }
+
+    .nav__menu .nav__cta {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 
     /* Hero Small Mobile */
