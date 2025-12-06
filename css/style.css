@@ -339,33 +339,76 @@ input, textarea, select {
     width: 100%;
     z-index: 1000;
     padding: 20px 0;
+    background: var(--white);
     transition: var(--transition-normal);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--gray-900);
     backdrop-filter: blur(20px);
     padding: 12px 0;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header .nav__link {
+    color: var(--gray-800);
+}
+
+.header .nav__link:hover,
+.header .nav__link.active {
+    color: var(--gold);
+}
+
+.header .nav__toggle span {
+    background: var(--gray-800);
+}
+
+.header.scrolled .nav__link {
+    color: var(--white);
+}
+
+.header.scrolled .nav__link:hover,
+.header.scrolled .nav__link.active {
+    color: var(--gold);
+}
+
+.header.scrolled .nav__toggle span {
+    background: var(--white);
 }
 
 .header--dark {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-sm);
+    background: var(--white);
 }
 
 .header--dark.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow-md);
+    background: var(--gray-900);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header--dark .nav__link {
     color: var(--gray-800);
 }
 
+.header--dark .nav__link:hover,
+.header--dark .nav__link.active {
+    color: var(--gold);
+}
+
+.header--dark .nav__toggle span {
+    background: var(--gray-800);
+}
+
 .header--dark.scrolled .nav__link {
-    color: var(--gray-800);
+    color: var(--white);
+}
+
+.header--dark.scrolled .nav__link:hover,
+.header--dark.scrolled .nav__link.active {
+    color: var(--gold);
+}
+
+.header--dark.scrolled .nav__toggle span {
+    background: var(--white);
 }
 
 .header--dark .nav__cta {
@@ -376,10 +419,6 @@ input, textarea, select {
 .header--dark.scrolled .nav__cta {
     background: var(--gradient-gold);
     color: var(--white);
-}
-
-.header--dark .nav__toggle span {
-    background: var(--gray-800);
 }
 
 /* Fix: Mobile menu links always visible (white on dark background) */
@@ -443,6 +482,7 @@ input, textarea, select {
 
 .header.scrolled .logo-container {
     padding: 6px 12px;
+    background: var(--white);
 }
 
 .header.scrolled .logo-container img {
@@ -492,10 +532,6 @@ input, textarea, select {
     padding: 8px 0;
 }
 
-.header.scrolled .nav__link {
-    color: var(--gray-800);
-}
-
 .nav__link::after {
     content: '';
     position: absolute;
@@ -523,8 +559,7 @@ input, textarea, select {
     align-items: center;
     gap: 10px;
     padding: 12px 24px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: var(--gradient-gold);
     border-radius: var(--radius-full);
     color: var(--white);
     font-weight: 600;
@@ -533,7 +568,6 @@ input, textarea, select {
 }
 
 .nav__cta:hover {
-    background: var(--gradient-gold);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(230, 168, 23, 0.4);
 }
@@ -558,9 +592,6 @@ input, textarea, select {
     transition: var(--transition-normal);
 }
 
-.header.scrolled .nav__toggle span {
-    background: var(--gray-800);
-}
 
 .nav__close {
     display: none;
@@ -663,9 +694,9 @@ input, textarea, select {
     font-family: var(--font-display);
     font-size: clamp(3.5rem, 10vw, 7rem);
     font-weight: 700;
-    color: #FF6B00;
+    color: var(--gold);
     line-height: 1.1;
-    text-shadow: 0 2px 20px rgba(255, 107, 0, 0.3);
+    text-shadow: 0 2px 20px rgba(230, 168, 23, 0.4);
 }
 
 .hero__subtitle {
@@ -836,6 +867,15 @@ input, textarea, select {
 @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
     50% { transform: translateX(-50%) translateY(10px); }
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 2px 10px rgba(230, 168, 23, 0.4));
+    }
+    50% {
+        filter: drop-shadow(0 2px 25px rgba(230, 168, 23, 0.7));
+    }
 }
 
 /* === Services Grid === */
@@ -3036,10 +3076,18 @@ input, textarea, select {
     }
 
     .header.scrolled .nav__toggle {
-        background: rgba(0, 0, 0, 0.08);
+        background: var(--white);
     }
 
     .header.scrolled .nav__toggle span {
+        background: var(--gray-800);
+    }
+
+    .header--dark.scrolled .nav__toggle {
+        background: var(--white);
+    }
+
+    .header--dark.scrolled .nav__toggle span {
         background: var(--gray-800);
     }
 
@@ -3143,64 +3191,90 @@ input, textarea, select {
 }
 
 @media (max-width: 768px) {
-    /* Hero Section Mobile */
+    /* Hero Section Mobile - Accueillant et Sexy */
     .hero {
         min-height: 100vh;
         min-height: 100svh;
-        padding-top: 120px;
+        padding-top: 100px;
         padding-bottom: 60px;
-        align-items: flex-start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero__content {
-        padding-top: 30px;
-        text-align: left;
+        padding-top: 0;
+        text-align: center;
         max-width: 100%;
     }
 
     .hero__badge {
-        margin-bottom: 16px;
-        padding: 8px 14px;
-        font-size: 0.8rem;
+        margin-bottom: 20px;
+        padding: 10px 18px;
+        font-size: 0.85rem;
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero__title-line {
-        font-size: 0.85rem;
-        letter-spacing: 3px;
-        margin-bottom: 8px;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        margin-bottom: 12px;
+        opacity: 0.9;
     }
 
     .hero__title-main {
-        font-size: 1.9rem;
-        margin-bottom: 5px;
+        font-size: 2.8rem;
+        margin-bottom: 8px;
+        font-weight: 600;
     }
 
     .hero__title-accent {
-        font-size: 2.3rem;
+        font-size: 3.8rem;
+        font-weight: 800;
+        letter-spacing: -1px;
+        text-shadow:
+            0 0 30px rgba(230, 168, 23, 0.5),
+            0 0 60px rgba(230, 168, 23, 0.3),
+            0 4px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(135deg, #E6A817 0%, #F4C430 50%, #E6A817 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: glowPulse 3s ease-in-out infinite;
     }
 
     .hero__subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 14px;
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+        font-style: italic;
     }
 
     .hero__description {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        margin-bottom: 28px;
-        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 32px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
     }
 
     .hero__buttons {
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
         width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero__buttons .btn {
         width: 100%;
         justify-content: center;
-        padding: 15px 24px;
+        padding: 16px 28px;
+        font-size: 1rem;
     }
 
     .hero__scroll {
@@ -3371,61 +3445,62 @@ input, textarea, select {
         font-size: 0.9rem;
     }
 
-    /* Hero Small Mobile */
+    /* Hero Small Mobile - Toujours Impactant */
     .hero {
         min-height: 100svh;
-        padding-top: 90px;
+        padding-top: 85px;
         padding-bottom: 40px;
     }
 
     .hero__content {
-        padding-top: 20px;
+        padding-top: 0;
     }
 
     .hero__badge {
-        padding: 6px 12px;
-        font-size: 0.7rem;
-        gap: 6px;
-        margin-bottom: 14px;
+        padding: 8px 14px;
+        font-size: 0.75rem;
+        gap: 8px;
+        margin-bottom: 18px;
     }
 
     .hero__badge-icon {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .hero__title-line {
-        font-size: 0.65rem;
-        letter-spacing: 2px;
-        margin-bottom: 6px;
-    }
-
-    .hero__title-main {
-        font-size: 1.5rem;
-        margin-bottom: 3px;
-    }
-
-    .hero__title-accent {
-        font-size: 1.8rem;
-    }
-
-    .hero__subtitle {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
+        letter-spacing: 3px;
         margin-bottom: 10px;
     }
 
+    .hero__title-main {
+        font-size: 2.2rem;
+        margin-bottom: 6px;
+    }
+
+    .hero__title-accent {
+        font-size: 3rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.15rem;
+        margin-bottom: 14px;
+    }
+
     .hero__description {
-        font-size: 0.8rem;
-        margin-bottom: 20px;
-        line-height: 1.5;
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+        line-height: 1.6;
     }
 
     .hero__buttons {
-        gap: 10px;
+        gap: 12px;
+        max-width: 280px;
     }
 
     .hero__buttons .btn {
-        padding: 13px 18px;
-        font-size: 0.8rem;
+        padding: 14px 22px;
+        font-size: 0.95rem;
     }
 
     /* Page Hero Small Mobile */
