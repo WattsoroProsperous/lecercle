@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Tennis | Cercle Sportif N'Kredji</title>
+    <meta name="description" content="Centre de formation Tennis à Bingerville - Cours pour tous niveaux avec coachs professionnels">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header header--dark" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link active">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--tennis">
+        <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1920')"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <span class="page-hero__subtitle">Excellence sportive</span>
+            <h1 class="page-hero__title">Centre de<br><span class="text-gradient">Tennis</span></h1>
+            <p class="page-hero__description">Formation professionnelle pour tous les niveaux dans un cadre verdoyant</p>
+        </div>
+        <div class="page-hero__scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro section">
+        <div class="container">
+            <div class="intro__wrapper">
+                <div class="intro__content">
+                    <span class="section__subtitle">Notre centre</span>
+                    <h2 class="section__title">Progressez à <span class="text-gradient">votre rythme</span></h2>
+                    <p class="intro__text">
+                        Notre centre de tennis offre un environnement idéal pour apprendre et
+                        perfectionner votre jeu. Que vous soyez débutant ou joueur confirmé,
+                        nos coachs certifiés vous accompagnent vers l'excellence.
+                    </p>
+                    <p class="intro__text">
+                        Avec nos courts de qualité professionnelle et notre approche
+                        personnalisée, chaque joueur trouve sa voie vers le succès.
+                    </p>
+                    <div class="intro__badges">
+                        <div class="intro__badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Coachs certifiés</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-users"></i>
+                            <span>Tous niveaux</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-calendar"></i>
+                            <span>Horaires flexibles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__image">
+                    <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=600" alt="Court de tennis">
+                    <div class="intro__image-badge">
+                        <span class="intro__image-badge-icon"><i class="fas fa-table-tennis-paddle-ball"></i></span>
+                        <span>Courts professionnels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs section section--dark">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Nos programmes</span>
+                <h2 class="section__title">Formules <span class="text-gradient">d'entraînement</span></h2>
+                <p class="section__description">Choisissez le programme adapté à vos objectifs</p>
+            </div>
+
+            <div class="programs__grid">
+                <div class="program-card">
+                    <div class="program-card__header">
+                        <div class="program-card__icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3 class="program-card__title">Initiation</h3>
+                        <p class="program-card__level">Débutants</p>
+                    </div>
+                    <div class="program-card__content">
+                        <ul class="program-card__features">
+                            <li><i class="fas fa-check"></i> Apprentissage des bases</li>
+                            <li><i class="fas fa-check"></i> Technique de frappe</li>
+                            <li><i class="fas fa-check"></i> Règles du jeu</li>
+                            <li><i class="fas fa-check"></i> Équipement fourni</li>
+                            <li><i class="fas fa-check"></i> Cours collectifs</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--full">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="program-card program-card--featured">
+                    <div class="program-card__badge">Populaire</div>
+                    <div class="program-card__header">
+                        <div class="program-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="program-card__title">Perfectionnement</h3>
+                        <p class="program-card__level">Intermédiaires</p>
+                    </div>
+                    <div class="program-card__content">
+                        <ul class="program-card__features">
+                            <li><i class="fas fa-check"></i> Amélioration technique</li>
+                            <li><i class="fas fa-check"></i> Tactique de jeu</li>
+                            <li><i class="fas fa-check"></i> Préparation physique</li>
+                            <li><i class="fas fa-check"></i> Matchs d'entraînement</li>
+                            <li><i class="fas fa-check"></i> Suivi personnalisé</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--primary btn--full">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-card__header">
+                        <div class="program-card__icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="program-card__title">Compétition</h3>
+                        <p class="program-card__level">Confirmés</p>
+                    </div>
+                    <div class="program-card__content">
+                        <ul class="program-card__features">
+                            <li><i class="fas fa-check"></i> Préparation intensive</li>
+                            <li><i class="fas fa-check"></i> Stratégie avancée</li>
+                            <li><i class="fas fa-check"></i> Mental de champion</li>
+                            <li><i class="fas fa-check"></i> Analyse vidéo</li>
+                            <li><i class="fas fa-check"></i> Participation tournois</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--full">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="coaches section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">L'équipe</span>
+                <h2 class="section__title">Nos <span class="text-gradient">Coachs</span></h2>
+            </div>
+
+            <div class="coaches__grid">
+                <div class="coach-card">
+                    <div class="coach-card__image">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400" alt="Coach">
+                    </div>
+                    <div class="coach-card__content">
+                        <h3 class="coach-card__name">Coach Principal</h3>
+                        <p class="coach-card__role">Responsable formation</p>
+                        <p class="coach-card__experience">15+ ans d'expérience</p>
+                    </div>
+                </div>
+                <div class="coach-card">
+                    <div class="coach-card__image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Coach">
+                    </div>
+                    <div class="coach-card__content">
+                        <h3 class="coach-card__name">Coach Adjoint</h3>
+                        <p class="coach-card__role">Spécialiste jeunes</p>
+                        <p class="coach-card__experience">10+ ans d'expérience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section section--gray">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Équipements</span>
+                <h2 class="section__title">Nos <span class="text-gradient">installations</span></h2>
+            </div>
+
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-table-tennis-paddle-ball"></i>
+                    </div>
+                    <h3 class="feature-card__title">Courts de qualité</h3>
+                    <p class="feature-card__text">Surface professionnelle bien entretenue pour un jeu optimal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="feature-card__title">Éclairage nocturne</h3>
+                    <p class="feature-card__text">Jouez même en soirée grâce à notre éclairage professionnel</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-shirt"></i>
+                    </div>
+                    <h3 class="feature-card__title">Vestiaires</h3>
+                    <p class="feature-card__text">Vestiaires équipés avec douches et casiers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="feature-card__title">Parking gratuit</h3>
+                    <p class="feature-card__text">Grand parking sécurisé pour tous nos visiteurs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Adhésion</span>
+                <h2 class="section__title">Réservation <span class="text-gradient">Court</span></h2>
+            </div>
+
+            <div class="pricing__options">
+                <div class="pricing__card">
+                    <h3>Location court</h3>
+                    <p>Réservez un court à l'heure</p>
+                    <a href="contact.html" class="btn btn--outline">Réserver</a>
+                </div>
+                <div class="pricing__card pricing__card--featured">
+                    <h3>Abonnement mensuel</h3>
+                    <p>Accès illimité aux courts</p>
+                    <a href="contact.html" class="btn btn--primary">S'abonner</a>
+                </div>
+                <div class="pricing__card">
+                    <h3>Cours particulier</h3>
+                    <p>Session avec un coach</p>
+                    <a href="contact.html" class="btn btn--outline">Réserver</a>
+                </div>
+            </div>
+
+            <p class="pricing__note">Contactez-nous pour connaître nos tarifs et disponibilités</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Prêt à monter sur le <span class="text-gradient">court</span> ?</h2>
+                <p class="cta__text">Réservez votre première séance d'essai</p>
+                <div class="cta__buttons">
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>Réserver maintenant</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:0747203436" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i>
+                        <span>07 47 20 34 36</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

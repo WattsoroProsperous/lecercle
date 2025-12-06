@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Chez François | Cercle Sportif N'Kredji</title>
+    <meta name="description" content="Restaurant gastronomique à Bingerville - Cuisine locale et internationale dans un cadre verdoyant">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header header--dark" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link active">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920')"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <span class="page-hero__subtitle">Gastronomie</span>
+            <h1 class="page-hero__title">Restaurant<br><span class="text-gradient">Chez François</span></h1>
+            <p class="page-hero__description">Une expérience culinaire unique où les saveurs africaines rencontrent l'excellence internationale</p>
+        </div>
+        <div class="page-hero__scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro section">
+        <div class="container">
+            <div class="intro__wrapper">
+                <div class="intro__content">
+                    <span class="section__subtitle">Notre philosophie</span>
+                    <h2 class="section__title">L'art de <span class="text-gradient">bien manger</span></h2>
+                    <p class="intro__text">
+                        Chez François, nous croyons que la gastronomie est un voyage. Chaque plat raconte
+                        une histoire, mêlant traditions ivoiriennes et influences internationales pour
+                        créer des saveurs uniques qui éveillent vos sens.
+                    </p>
+                    <p class="intro__text">
+                        Dans notre cadre verdoyant et apaisant, laissez-vous porter par une expérience
+                        culinaire mémorable, accompagnée d'un service attentionné et chaleureux.
+                    </p>
+                    <div class="intro__badges">
+                        <div class="intro__badge">
+                            <i class="fas fa-leaf"></i>
+                            <span>Produits frais</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-fire-burner"></i>
+                            <span>Cuisine maison</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-wine-glass"></i>
+                            <span>Cave à vins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="Plat gastronomique">
+                    <div class="intro__image-badge">
+                        <span class="intro__image-badge-icon"><i class="fas fa-clock"></i></span>
+                        <span>Ouvert jusqu'à 23h30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section section--dark">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Nos créations</span>
+                <h2 class="section__title">Plats <span class="text-gradient">Populaires</span></h2>
+                <p class="section__description">Découvrez les favorites de nos clients</p>
+            </div>
+
+            <div class="menu__grid">
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400" alt="Filet de Boeuf">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Viandes</div>
+                        <h3 class="menu-card__title">Cœur de Filet de Bœuf</h3>
+                        <p class="menu-card__description">Sauce Bercy, légumes de saison</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-star"></i> Recommandé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Poisson Braisé">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Poissons</div>
+                        <h3 class="menu-card__title">Poisson Braisé</h3>
+                        <p class="menu-card__description">Préparation traditionnelle ivoirienne</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-fire"></i> Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza Royale">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Pizzas</div>
+                        <h3 class="menu-card__title">Pizza Royale</h3>
+                        <p class="menu-card__description">Notre recette signature</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-heart"></i> Best-seller</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400" alt="Poulet Braisé">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Grillades</div>
+                        <h3 class="menu-card__title">Poulet Braisé Attiéké</h3>
+                        <p class="menu-card__description">Le grand classique ivoirien</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-fire"></i> Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400" alt="Brochettes">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Grillades</div>
+                        <h3 class="menu-card__title">Brochettes de Bœuf</h3>
+                        <p class="menu-card__description">Filet premium grillé</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-star"></i> Recommandé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-card__image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Dessert">
+                    </div>
+                    <div class="menu-card__content">
+                        <div class="menu-card__category">Desserts</div>
+                        <h3 class="menu-card__title">Café Gourmand</h3>
+                        <p class="menu-card__description">Assortiment de mini desserts</p>
+                        <div class="menu-card__footer">
+                            <span class="menu-card__tag"><i class="fas fa-heart"></i> Best-seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__cta">
+                <p>Découvrez notre carte complète sur place</p>
+                <a href="contact.html" class="btn btn--primary">
+                    <span>Réserver une table</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ambiance Section -->
+    <section class="ambiance section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Notre espace</span>
+                <h2 class="section__title">Un cadre <span class="text-gradient">d'exception</span></h2>
+            </div>
+
+            <div class="ambiance__gallery">
+                <div class="ambiance__item ambiance__item--large">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800" alt="Terrasse">
+                    <div class="ambiance__item-overlay">
+                        <span>Terrasse verdoyante</span>
+                    </div>
+                </div>
+                <div class="ambiance__item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400" alt="Intérieur">
+                    <div class="ambiance__item-overlay">
+                        <span>Salle climatisée</span>
+                    </div>
+                </div>
+                <div class="ambiance__item">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=400" alt="Bar">
+                    <div class="ambiance__item-overlay">
+                        <span>Bar & Cocktails</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="drinks section section--gray">
+        <div class="container">
+            <div class="drinks__wrapper">
+                <div class="drinks__content">
+                    <span class="section__subtitle">Boissons</span>
+                    <h2 class="section__title">Nos <span class="text-gradient">Rafraîchissements</span></h2>
+                    <p class="drinks__text">
+                        Accompagnez votre repas de nos boissons locales et internationales.
+                        Du traditionnel Bissap aux cocktails signature, en passant par notre
+                        sélection de vins.
+                    </p>
+
+                    <div class="drinks__list">
+                        <div class="drinks__item">
+                            <span class="drinks__item-icon">🍷</span>
+                            <div class="drinks__item-info">
+                                <h4>Cave à vins</h4>
+                                <p>Sélection française & internationale</p>
+                            </div>
+                        </div>
+                        <div class="drinks__item">
+                            <span class="drinks__item-icon">🍹</span>
+                            <div class="drinks__item-info">
+                                <h4>Cocktails</h4>
+                                <p>Créations du barman & classiques</p>
+                            </div>
+                        </div>
+                        <div class="drinks__item">
+                            <span class="drinks__item-icon">🧃</span>
+                            <div class="drinks__item-info">
+                                <h4>Bissap & Gingembre</h4>
+                                <p>Jus locaux rafraîchissants</p>
+                            </div>
+                        </div>
+                        <div class="drinks__item">
+                            <span class="drinks__item-icon">☕</span>
+                            <div class="drinks__item-info">
+                                <h4>Glace au Café</h4>
+                                <p>Notre spécialité glacée</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drinks__image">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500" alt="Cocktails">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="resto-info section">
+        <div class="container">
+            <div class="resto-info__grid">
+                <div class="resto-info__card">
+                    <div class="resto-info__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horaires</h3>
+                    <p>Tous les jours<br><strong>11h00 - 23h30</strong></p>
+                </div>
+                <div class="resto-info__card">
+                    <div class="resto-info__icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Services</h3>
+                    <p>Repas sur place<br><strong>Drive disponible</strong></p>
+                </div>
+                <div class="resto-info__card">
+                    <div class="resto-info__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacité</h3>
+                    <p>Terrasse & Intérieur<br><strong>100+ couverts</strong></p>
+                </div>
+                <div class="resto-info__card">
+                    <div class="resto-info__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Note</h3>
+                    <p>Google Reviews<br><strong>4.1/5 (525 avis)</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Réservez votre <span class="text-gradient">table</span></h2>
+                <p class="cta__text">Pour une expérience culinaire inoubliable</p>
+                <div class="cta__buttons">
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>Réserver maintenant</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:0747203436" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i>
+                        <span>07 47 20 34 36</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

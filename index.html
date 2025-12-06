@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cercle Sportif N'Kredji | Chez François Bingerville</title>
+    <meta name="description" content="Restaurant, Centre de Tennis, Sports de Combat, Événements et Location d'Espace à Bingerville">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__image" style="background-image: url('assets/hero.png')"></div>
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content container">
+            <div class="hero__badge">
+                <span class="hero__badge-icon"><i class="fas fa-star"></i></span>
+                <span>4.1/5 - 525 avis Google</span>
+            </div>
+
+            <h1 class="hero__title">
+                <span class="hero__title-line">Bienvenue au</span>
+                <span class="hero__title-main">Cercle Sportif</span>
+                <span class="hero__title-accent">N'Kredji</span>
+            </h1>
+
+            <p class="hero__subtitle">Chez François</p>
+
+            <p class="hero__description">
+                Un havre de paix où gastronomie, sport et bien-être se rencontrent
+                dans un cadre verdoyant d'exception à Bingerville.
+            </p>
+
+            <div class="hero__buttons">
+                <a href="restaurant.html" class="btn btn--primary">
+                    <span>Découvrir</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn btn--glass">
+                    <span>Nous contacter</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="hero__float hero__float--1"></div>
+        <div class="hero__float hero__float--2"></div>
+        <div class="hero__float hero__float--3"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Ce que nous offrons</span>
+                <h2 class="section__title">Nos <span class="text-gradient">Univers</span></h2>
+            </div>
+
+            <div class="services__grid">
+                <!-- Restaurant -->
+                <a href="restaurant.html" class="service-card service-card--large">
+                    <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800')"></div>
+                    <div class="service-card__overlay"></div>
+                    <div class="service-card__content">
+                        <span class="service-card__icon"><i class="fas fa-utensils"></i></span>
+                        <h3 class="service-card__title">Restaurant</h3>
+                        <p class="service-card__text">Saveurs locales & internationales dans un cadre enchanteur</p>
+                        <span class="service-card__link">
+                            Explorer <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Tennis -->
+                <a href="tennis.html" class="service-card">
+                    <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800')"></div>
+                    <div class="service-card__overlay"></div>
+                    <div class="service-card__content">
+                        <span class="service-card__icon"><i class="fas fa-table-tennis-paddle-ball"></i></span>
+                        <h3 class="service-card__title">Tennis</h3>
+                        <p class="service-card__text">Centre de formation & courts professionnels</p>
+                        <span class="service-card__link">
+                            Explorer <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Combat -->
+                <a href="combat.html" class="service-card">
+                    <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800')"></div>
+                    <div class="service-card__overlay"></div>
+                    <div class="service-card__content">
+                        <span class="service-card__icon"><i class="fas fa-hand-fist"></i></span>
+                        <h3 class="service-card__title">Sports de Combat</h3>
+                        <p class="service-card__text">Boxe, MMA, Arts martiaux & Self-défense</p>
+                        <span class="service-card__link">
+                            Explorer <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Events -->
+                <a href="evenements.html" class="service-card">
+                    <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800')"></div>
+                    <div class="service-card__overlay"></div>
+                    <div class="service-card__content">
+                        <span class="service-card__icon"><i class="fas fa-champagne-glasses"></i></span>
+                        <h3 class="service-card__title">Événements</h3>
+                        <p class="service-card__text">Mariages, séminaires & célébrations</p>
+                        <span class="service-card__link">
+                            Explorer <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Location -->
+                <a href="evenements.html#location" class="service-card">
+                    <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800')"></div>
+                    <div class="service-card__overlay"></div>
+                    <div class="service-card__content">
+                        <span class="service-card__icon"><i class="fas fa-building"></i></span>
+                        <h3 class="service-card__title">Location Espace</h3>
+                        <p class="service-card__text">Salles & espaces pour vos projets</p>
+                        <span class="service-card__link">
+                            Explorer <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section">
+        <div class="about__bg"></div>
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__images">
+                    <div class="about__image about__image--1">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600" alt="Restaurant">
+                    </div>
+                    <div class="about__image about__image--2">
+                        <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=400" alt="Tennis">
+                    </div>
+                    <div class="about__experience">
+                        <span class="about__experience-number">10+</span>
+                        <span class="about__experience-text">Années d'excellence</span>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <span class="section__subtitle">Notre histoire</span>
+                    <h2 class="section__title">Un lieu <span class="text-gradient">unique</span> à Bingerville</h2>
+
+                    <p class="about__text">
+                        Niché au cœur de Bingerville, le Cercle Sportif N'Kredji - Chez François
+                        est bien plus qu'un simple restaurant. C'est un véritable complexe de loisirs
+                        où chaque visiteur trouve son bonheur.
+                    </p>
+
+                    <p class="about__text">
+                        Que vous veniez pour savourer notre cuisine raffinée, perfectionner votre
+                        revers au tennis, vous défouler dans nos cours de boxe ou célébrer un
+                        moment important, notre équipe passionnée vous accueille dans un cadre
+                        verdoyant et apaisant.
+                    </p>
+
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__feature-icon"><i class="fas fa-leaf"></i></span>
+                            <span class="about__feature-text">Cadre verdoyant</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon"><i class="fas fa-utensils"></i></span>
+                            <span class="about__feature-text">Cuisine raffinée</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon"><i class="fas fa-dumbbell"></i></span>
+                            <span class="about__feature-text">Sports variés</span>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon"><i class="fas fa-users"></i></span>
+                            <span class="about__feature-text">Service premium</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn btn--primary">
+                        <span>En savoir plus</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat">
+                    <span class="stat__number" data-count="525">0</span>
+                    <span class="stat__label">Avis clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="5">0</span>
+                    <span class="stat__label">Univers à découvrir</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="10">0</span>
+                    <span class="stat__label">Années d'expérience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-count="1000">0</span>
+                    <span class="stat__label">Clients satisfaits</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Témoignages</span>
+                <h2 class="section__title">Ce qu'ils <span class="text-gradient">disent</span></h2>
+            </div>
+
+            <div class="testimonials__slider">
+                <div class="testimonial active">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "Un espace formidable, calme avec terrain de tennis et bien aéré.
+                            L'endroit parfait pour se détendre et faire du sport."
+                        </blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">GO</div>
+                            <div class="testimonial__info">
+                                <span class="testimonial__name">Goulla Ousmane</span>
+                                <span class="testimonial__date">Client régulier</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "Bien espacé, bien propre. Les chambres sont super agréables.
+                            Un cadre vraiment exceptionnel pour se ressourcer."
+                        </blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">TK</div>
+                            <div class="testimonial__info">
+                                <span class="testimonial__name">Tiacoh A-e Kouadio</span>
+                                <span class="testimonial__date">Visiteur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial__quote">
+                            "Le cadre est magnifique et la pizza est excellente !
+                            Un lieu parfait pour les sorties en famille ou entre amis."
+                        </blockquote>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">AM</div>
+                            <div class="testimonial__info">
+                                <span class="testimonial__name">Aminata M.</span>
+                                <span class="testimonial__date">Cliente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__nav">
+                <button class="testimonials__dot active" data-index="0"></button>
+                <button class="testimonials__dot" data-index="1"></button>
+                <button class="testimonials__dot" data-index="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Prêt à vivre l'expérience <span class="text-gradient">N'Kredji</span> ?</h2>
+                <p class="cta__text">Réservez votre table, votre cours ou votre événement dès maintenant</p>
+                <div class="cta__buttons">
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>Réserver maintenant</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:0747203436" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i>
+                        <span>07 47 20 34 36</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports de Combat | Cercle Sportif N'Kredji</title>
+    <meta name="description" content="Boxe, MMA, Arts martiaux à Bingerville - Entraînez-vous avec nos experts">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header header--dark" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link active">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--combat">
+        <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1920')"></div>
+        <div class="page-hero__overlay page-hero__overlay--dark"></div>
+        <div class="page-hero__content">
+            <span class="page-hero__subtitle">Discipline & Force</span>
+            <h1 class="page-hero__title">Sports de<br><span class="text-gradient">Combat</span></h1>
+            <p class="page-hero__description">Dépassez vos limites avec nos disciplines et coachs experts</p>
+        </div>
+        <div class="page-hero__scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro section">
+        <div class="container">
+            <div class="intro__wrapper intro__wrapper--reverse">
+                <div class="intro__image">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600" alt="Sports de combat">
+                    <div class="intro__image-badge">
+                        <span class="intro__image-badge-icon"><i class="fas fa-hand-fist"></i></span>
+                        <span>Première séance gratuite</span>
+                    </div>
+                </div>
+                <div class="intro__content">
+                    <span class="section__subtitle">Notre vision</span>
+                    <h2 class="section__title">L'art du <span class="text-gradient">dépassement</span></h2>
+                    <p class="intro__text">
+                        Les sports de combat sont bien plus qu'une activité physique. Ils développent
+                        la discipline, la confiance en soi et le respect. Notre équipe de coachs
+                        passionnés vous guide dans votre progression, quel que soit votre niveau.
+                    </p>
+                    <p class="intro__text">
+                        Dans un environnement sécurisé et bienveillant, apprenez les techniques
+                        fondamentales ou perfectionnez votre art pour atteindre l'excellence.
+                    </p>
+                    <div class="intro__badges">
+                        <div class="intro__badge">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Sécurité maximale</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-user-ninja"></i>
+                            <span>Coachs experts</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-medal"></i>
+                            <span>Tous niveaux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disciplines Section -->
+    <section class="disciplines section section--dark">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Nos disciplines</span>
+                <h2 class="section__title">Choisissez votre <span class="text-gradient">voie</span></h2>
+                <p class="section__description">Découvrez nos différentes disciplines de combat</p>
+            </div>
+
+            <div class="disciplines__grid">
+                <div class="discipline-card">
+                    <div class="discipline-card__image">
+                        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=500" alt="Boxe">
+                        <div class="discipline-card__overlay"></div>
+                    </div>
+                    <div class="discipline-card__content">
+                        <div class="discipline-card__icon">
+                            <i class="fas fa-hand-fist"></i>
+                        </div>
+                        <h3 class="discipline-card__title">Boxe</h3>
+                        <p class="discipline-card__subtitle">Anglaise & Française</p>
+                        <p class="discipline-card__description">
+                            Le noble art pour développer réflexes, endurance et technique de frappe.
+                        </p>
+                        <ul class="discipline-card__features">
+                            <li><i class="fas fa-check"></i> Cardio intense</li>
+                            <li><i class="fas fa-check"></i> Technique de frappe</li>
+                            <li><i class="fas fa-check"></i> Sparring contrôlé</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--small">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="discipline-card">
+                    <div class="discipline-card__image">
+                        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500" alt="MMA">
+                        <div class="discipline-card__overlay"></div>
+                    </div>
+                    <div class="discipline-card__content">
+                        <div class="discipline-card__icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="discipline-card__title">MMA</h3>
+                        <p class="discipline-card__subtitle">Mixed Martial Arts</p>
+                        <p class="discipline-card__description">
+                            La discipline complète combinant toutes les techniques de combat.
+                        </p>
+                        <ul class="discipline-card__features">
+                            <li><i class="fas fa-check"></i> Pieds-poings</li>
+                            <li><i class="fas fa-check"></i> Combat au sol</li>
+                            <li><i class="fas fa-check"></i> Soumissions</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--small">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="discipline-card">
+                    <div class="discipline-card__image">
+                        <img src="https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=500" alt="Karaté">
+                        <div class="discipline-card__overlay"></div>
+                    </div>
+                    <div class="discipline-card__content">
+                        <div class="discipline-card__icon">
+                            <i class="fas fa-yin-yang"></i>
+                        </div>
+                        <h3 class="discipline-card__title">Arts Martiaux</h3>
+                        <p class="discipline-card__subtitle">Karaté & Judo</p>
+                        <p class="discipline-card__description">
+                            Les arts traditionnels pour maîtrise du corps et de l'esprit.
+                        </p>
+                        <ul class="discipline-card__features">
+                            <li><i class="fas fa-check"></i> Katas & Techniques</li>
+                            <li><i class="fas fa-check"></i> Discipline mentale</li>
+                            <li><i class="fas fa-check"></i> Passage de grades</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--small">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="discipline-card">
+                    <div class="discipline-card__image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500" alt="Self-défense">
+                        <div class="discipline-card__overlay"></div>
+                    </div>
+                    <div class="discipline-card__content">
+                        <div class="discipline-card__icon">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <h3 class="discipline-card__title">Self-défense</h3>
+                        <p class="discipline-card__subtitle">Krav Maga & Techniques</p>
+                        <p class="discipline-card__description">
+                            Apprenez à vous protéger efficacement dans toutes les situations.
+                        </p>
+                        <ul class="discipline-card__features">
+                            <li><i class="fas fa-check"></i> Réflexes de survie</li>
+                            <li><i class="fas fa-check"></i> Situations réelles</li>
+                            <li><i class="fas fa-check"></i> Confiance en soi</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--small">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits section">
+        <div class="container">
+            <div class="benefits__wrapper">
+                <div class="benefits__content">
+                    <span class="section__subtitle">Pourquoi nous rejoindre</span>
+                    <h2 class="section__title">Les <span class="text-gradient">bienfaits</span></h2>
+                    <p class="benefits__text">
+                        Les sports de combat apportent des bénéfices physiques et mentaux
+                        incomparables. Rejoignez notre communauté et transformez-vous.
+                    </p>
+                </div>
+
+                <div class="benefits__grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <h3>Condition physique</h3>
+                        <p>Améliorez votre endurance, force et souplesse</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Mental d'acier</h3>
+                        <p>Développez concentration et gestion du stress</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Perte de poids</h3>
+                        <p>Brûlez des calories efficacement</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Confiance en soi</h3>
+                        <p>Gagnez en assurance au quotidien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule section section--gray">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Planning</span>
+                <h2 class="section__title">Horaires des <span class="text-gradient">cours</span></h2>
+            </div>
+
+            <div class="schedule__table-wrapper">
+                <table class="schedule__table">
+                    <thead>
+                        <tr>
+                            <th>Discipline</th>
+                            <th>Lundi</th>
+                            <th>Mercredi</th>
+                            <th>Vendredi</th>
+                            <th>Samedi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Boxe</strong></td>
+                            <td>18h - 20h</td>
+                            <td>18h - 20h</td>
+                            <td>18h - 20h</td>
+                            <td>10h - 12h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MMA</strong></td>
+                            <td>20h - 22h</td>
+                            <td>-</td>
+                            <td>20h - 22h</td>
+                            <td>14h - 16h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karaté</strong></td>
+                            <td>-</td>
+                            <td>17h - 19h</td>
+                            <td>-</td>
+                            <td>10h - 12h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Self-défense</strong></td>
+                            <td>-</td>
+                            <td>20h - 21h30</td>
+                            <td>-</td>
+                            <td>16h - 17h30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="schedule__note">
+                <i class="fas fa-info-circle"></i>
+                Les horaires peuvent varier. Contactez-nous pour confirmer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Trial Section -->
+    <section class="trial section">
+        <div class="container">
+            <div class="trial__wrapper">
+                <div class="trial__content">
+                    <span class="trial__badge"><i class="fas fa-gift"></i> Offre spéciale</span>
+                    <h2 class="trial__title">Première séance <span class="text-gradient">gratuite</span></h2>
+                    <p class="trial__text">
+                        Venez découvrir nos disciplines sans engagement. Essayez un cours
+                        gratuitement et trouvez la discipline qui vous correspond.
+                    </p>
+                    <ul class="trial__features">
+                        <li><i class="fas fa-check"></i> Sans engagement</li>
+                        <li><i class="fas fa-check"></i> Équipement fourni</li>
+                        <li><i class="fas fa-check"></i> Encadrement professionnel</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>Réserver ma séance gratuite</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="trial__image">
+                    <img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?w=500" alt="Entraînement">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Prêt à relever le <span class="text-gradient">défi</span> ?</h2>
+                <p class="cta__text">Rejoignez notre communauté de combattants</p>
+                <div class="cta__buttons">
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>S'inscrire maintenant</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:0747203436" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i>
+                        <span>07 47 20 34 36</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

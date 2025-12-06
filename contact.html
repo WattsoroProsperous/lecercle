@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cercle Sportif N'Kredji</title>
+    <meta name="description" content="Contactez le Cercle Sportif N'Kredji - Réservations restaurant, tennis, sports de combat et événements à Bingerville">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header header--dark" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link active">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--contact">
+        <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920')"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <span class="page-hero__subtitle">Parlons ensemble</span>
+            <h1 class="page-hero__title">Contactez<br><span class="text-gradient">Nous</span></h1>
+            <p class="page-hero__description">Nous sommes à votre écoute pour toutes vos demandes</p>
+        </div>
+        <div class="page-hero__scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__info">
+                    <span class="section__subtitle">Informations</span>
+                    <h2 class="section__title">Restons en <span class="text-gradient">contact</span></h2>
+                    <p class="contact__description">
+                        Une question, une réservation ou un projet d'événement ?
+                        Notre équipe est à votre disposition pour vous accompagner.
+                    </p>
+
+                    <div class="contact__cards">
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Adresse</h3>
+                                <p>Unnamed Road, Bingerville</p>
+                                <p class="contact-card__sub">Plus Code: 9467+PM</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Téléphone</h3>
+                                <a href="tel:0747203436">07 47 20 34 36</a>
+                                <p class="contact-card__sub">Du lundi au dimanche</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Horaires</h3>
+                                <p>Tous les jours</p>
+                                <p class="contact-card__sub">Jusqu'à 23h30</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Site Web</h3>
+                                <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                                <p class="contact-card__sub">Visitez notre site officiel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <h4>Suivez-nous</h4>
+                        <div class="contact__social-links">
+                            <a href="#" class="contact__social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="contact__social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="contact__social-link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="contact__social-link">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <h3 class="contact-form__title">Envoyez-nous un message</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Votre nom *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Votre email *</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Votre téléphone</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="restaurant">Réservation Restaurant</option>
+                                    <option value="tennis">Cours de Tennis</option>
+                                    <option value="combat">Sports de Combat</option>
+                                    <option value="event">Organisation Événement</option>
+                                    <option value="location">Location Espace</option>
+                                    <option value="other">Autre demande</option>
+                                </select>
+                                <label for="subject">Sujet *</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-group--full">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Votre message *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15881.0!2d-3.89!3d5.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjEnMDAuMCJOIDPCsDUzJzI0LjAiVw!5e0!3m2!1sfr!2sci!4v1234567890"
+                width="100%"
+                height="500"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay">
+                <div class="map-card">
+                    <div class="map-card__logo">
+                        <img src="assets/logo.png" alt="Logo">
+                    </div>
+                    <h3>Cercle Sportif N'Kredji</h3>
+                    <p>Chez François Bingerville</p>
+                    <a href="https://maps.google.com/?q=Bingerville+Cote+d'Ivoire" target="_blank" class="btn btn--primary btn--small">
+                        <i class="fas fa-directions"></i>
+                        <span>Itinéraire</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions Section -->
+    <section class="quick-actions section section--gray">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Raccourcis</span>
+                <h2 class="section__title">Réservation <span class="text-gradient">rapide</span></h2>
+            </div>
+
+            <div class="quick-actions__grid">
+                <a href="tel:0747203436" class="quick-action">
+                    <div class="quick-action__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Appelez-nous</h3>
+                    <p>Réservation immédiate par téléphone</p>
+                    <span class="quick-action__value">07 47 20 34 36</span>
+                </a>
+
+                <a href="https://wa.me/22547203436" target="_blank" class="quick-action">
+                    <div class="quick-action__icon quick-action__icon--whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Écrivez-nous sur WhatsApp</p>
+                    <span class="quick-action__value">Envoyer un message</span>
+                </a>
+
+                <a href="https://maps.google.com/?q=Bingerville+Cote+d'Ivoire" target="_blank" class="quick-action">
+                    <div class="quick-action__icon quick-action__icon--maps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Google Maps</h3>
+                    <p>Trouvez-nous facilement</p>
+                    <span class="quick-action__value">Voir l'itinéraire</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">FAQ</span>
+                <h2 class="section__title">Questions <span class="text-gradient">fréquentes</span></h2>
+            </div>
+
+            <div class="faq__grid">
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Comment réserver une table au restaurant ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Vous pouvez réserver par téléphone au 07 47 20 34 36, via WhatsApp, ou en remplissant le formulaire de contact ci-dessus. Les réservations sont recommandées, surtout le week-end.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Proposez-vous des cours d'essai gratuits ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Oui ! Pour les sports de combat, la première séance d'essai est gratuite. Pour le tennis, contactez-nous pour connaître nos offres découverte.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Peut-on organiser un événement privé ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Absolument ! Nous accueillons mariages, anniversaires, séminaires et tous types d'événements. Contactez-nous pour une visite des espaces et un devis personnalisé.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Y a-t-il un parking disponible ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Oui, un grand parking gratuit et sécurisé est disponible pour tous nos visiteurs et clients.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Quels sont vos horaires d'ouverture ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Nous sommes ouverts tous les jours jusqu'à 23h30. Les horaires des cours sportifs varient selon les disciplines - consultez les pages dédiées ou contactez-nous.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Proposez-vous un service de livraison ?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Un service Drive est disponible. Pour la livraison, contactez-nous directement pour vérifier les disponibilités selon votre zone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements & Location | Cercle Sportif N'Kredji</title>
+    <meta name="description" content="Organisation d'événements et location d'espace à Bingerville - Mariages, séminaires, anniversaires">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header header--dark" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                </div>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="restaurant.html" class="nav__link">Restaurant</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tennis.html" class="nav__link">Tennis</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="combat.html" class="nav__link">Sports de Combat</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="evenements.html" class="nav__link active">Événements</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="tel:0747203436" class="nav__cta">
+                    <i class="fas fa-phone"></i>
+                    <span>Réserver</span>
+                </a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--events">
+        <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920')"></div>
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <span class="page-hero__subtitle">Célébrations</span>
+            <h1 class="page-hero__title">Événements &<br><span class="text-gradient">Location</span></h1>
+            <p class="page-hero__description">Des moments inoubliables dans un cadre d'exception</p>
+        </div>
+        <div class="page-hero__scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro section">
+        <div class="container">
+            <div class="intro__wrapper">
+                <div class="intro__content">
+                    <span class="section__subtitle">Notre engagement</span>
+                    <h2 class="section__title">Créons ensemble des <span class="text-gradient">souvenirs</span></h2>
+                    <p class="intro__text">
+                        Votre événement mérite un cadre à la hauteur de son importance.
+                        Au Cercle Sportif N'Kredji, nous mettons notre expertise et nos
+                        espaces exceptionnels à votre service pour créer des moments magiques.
+                    </p>
+                    <p class="intro__text">
+                        De la planification à la réalisation, notre équipe vous accompagne
+                        pour que chaque détail soit parfait et que vos invités gardent
+                        un souvenir inoubliable.
+                    </p>
+                    <div class="intro__badges">
+                        <div class="intro__badge">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            <span>Sur mesure</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Équipe dédiée</span>
+                        </div>
+                        <div class="intro__badge">
+                            <i class="fas fa-leaf"></i>
+                            <span>Cadre verdoyant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__image">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600" alt="Événement">
+                    <div class="intro__image-badge">
+                        <span class="intro__image-badge-icon"><i class="fas fa-star"></i></span>
+                        <span>100+ événements réussis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Types Section -->
+    <section class="event-types section section--dark">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Nos prestations</span>
+                <h2 class="section__title">Types <span class="text-gradient">d'événements</span></h2>
+                <p class="section__description">Nous organisons tous types de célébrations</p>
+            </div>
+
+            <div class="event-types__grid">
+                <div class="event-type-card">
+                    <div class="event-type-card__image">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Mariage">
+                        <div class="event-type-card__overlay"></div>
+                    </div>
+                    <div class="event-type-card__content">
+                        <div class="event-type-card__icon">
+                            <i class="fas fa-rings-wedding"></i>
+                        </div>
+                        <h3 class="event-type-card__title">Mariages</h3>
+                        <p class="event-type-card__description">
+                            Célébrez votre union dans un cadre enchanteur. Notre équipe
+                            s'occupe de tout pour que ce jour soit parfait.
+                        </p>
+                        <ul class="event-type-card__features">
+                            <li><i class="fas fa-check"></i> Décoration personnalisée</li>
+                            <li><i class="fas fa-check"></i> Service traiteur complet</li>
+                            <li><i class="fas fa-check"></i> Coordination jour J</li>
+                            <li><i class="fas fa-check"></i> Espace photo</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--primary">Demander un devis</a>
+                    </div>
+                </div>
+
+                <div class="event-type-card">
+                    <div class="event-type-card__image">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600" alt="Séminaire">
+                        <div class="event-type-card__overlay"></div>
+                    </div>
+                    <div class="event-type-card__content">
+                        <div class="event-type-card__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="event-type-card__title">Séminaires</h3>
+                        <p class="event-type-card__description">
+                            Un environnement propice à la concentration et à la créativité
+                            pour vos réunions d'entreprise.
+                        </p>
+                        <ul class="event-type-card__features">
+                            <li><i class="fas fa-check"></i> Salles équipées</li>
+                            <li><i class="fas fa-check"></i> Vidéoprojecteur & WiFi</li>
+                            <li><i class="fas fa-check"></i> Pause-café & déjeuner</li>
+                            <li><i class="fas fa-check"></i> Team building sportif</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--primary">Demander un devis</a>
+                    </div>
+                </div>
+
+                <div class="event-type-card">
+                    <div class="event-type-card__image">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600" alt="Anniversaire">
+                        <div class="event-type-card__overlay"></div>
+                    </div>
+                    <div class="event-type-card__content">
+                        <div class="event-type-card__icon">
+                            <i class="fas fa-cake-candles"></i>
+                        </div>
+                        <h3 class="event-type-card__title">Anniversaires</h3>
+                        <p class="event-type-card__description">
+                            Fêtez vos moments spéciaux avec style dans notre espace
+                            festif et convivial.
+                        </p>
+                        <ul class="event-type-card__features">
+                            <li><i class="fas fa-check"></i> Menus personnalisés</li>
+                            <li><i class="fas fa-check"></i> Animation optionnelle</li>
+                            <li><i class="fas fa-check"></i> Gâteau sur commande</li>
+                            <li><i class="fas fa-check"></i> Décoration thématique</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--primary">Demander un devis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section section" id="location">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Nos espaces</span>
+                <h2 class="section__title">Location <span class="text-gradient">d'espace</span></h2>
+                <p class="section__description">Des espaces modulables pour tous vos projets</p>
+            </div>
+
+            <div class="spaces__grid">
+                <div class="space-card">
+                    <div class="space-card__image">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500" alt="Terrasse">
+                    </div>
+                    <div class="space-card__content">
+                        <h3 class="space-card__title">Terrasse extérieure</h3>
+                        <p class="space-card__description">Espace verdoyant en plein air</p>
+                        <div class="space-card__features">
+                            <span><i class="fas fa-users"></i> 150 personnes</span>
+                            <span><i class="fas fa-tree"></i> Vue jardin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-card">
+                    <div class="space-card__image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500" alt="Salle">
+                    </div>
+                    <div class="space-card__content">
+                        <h3 class="space-card__title">Salle de réception</h3>
+                        <p class="space-card__description">Espace climatisé et modulable</p>
+                        <div class="space-card__features">
+                            <span><i class="fas fa-users"></i> 100 personnes</span>
+                            <span><i class="fas fa-snowflake"></i> Climatisé</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-card">
+                    <div class="space-card__image">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=500" alt="Salle de réunion">
+                    </div>
+                    <div class="space-card__content">
+                        <h3 class="space-card__title">Salle de réunion</h3>
+                        <p class="space-card__description">Équipée pour vos meetings</p>
+                        <div class="space-card__features">
+                            <span><i class="fas fa-users"></i> 30 personnes</span>
+                            <span><i class="fas fa-tv"></i> Vidéoprojecteur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="event-services section section--gray">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Inclus</span>
+                <h2 class="section__title">Nos <span class="text-gradient">services</span></h2>
+            </div>
+
+            <div class="event-services__grid">
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Service traiteur</h3>
+                    <p>Menus personnalisés selon vos goûts et budget</p>
+                </div>
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Décoration</h3>
+                    <p>Mise en scène sur mesure de votre événement</p>
+                </div>
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Sonorisation</h3>
+                    <p>Système audio et éclairage professionnel</p>
+                </div>
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photo & Vidéo</h3>
+                    <p>Partenaires photographes recommandés</p>
+                </div>
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Parking</h3>
+                    <p>Grand parking sécurisé pour vos invités</p>
+                </div>
+                <div class="event-service">
+                    <div class="event-service__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Coordination</h3>
+                    <p>Un coordinateur dédié le jour J</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Galerie</span>
+                <h2 class="section__title">Nos <span class="text-gradient">réalisations</span></h2>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800" alt="Événement">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400" alt="Mariage">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400" alt="Séminaire">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400" alt="Fête">
+                </div>
+                <div class="gallery__item">
+                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=400" alt="Réception">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section section--dark">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <span class="section__subtitle">Comment ça marche</span>
+                <h2 class="section__title">Notre <span class="text-gradient">processus</span></h2>
+            </div>
+
+            <div class="process__steps">
+                <div class="process__step">
+                    <div class="process__step-number">01</div>
+                    <h3>Premier contact</h3>
+                    <p>Parlez-nous de votre projet et de vos attentes</p>
+                </div>
+                <div class="process__step">
+                    <div class="process__step-number">02</div>
+                    <h3>Visite & Devis</h3>
+                    <p>Découvrez nos espaces et recevez un devis personnalisé</p>
+                </div>
+                <div class="process__step">
+                    <div class="process__step-number">03</div>
+                    <h3>Planification</h3>
+                    <p>Nous organisons ensemble chaque détail</p>
+                </div>
+                <div class="process__step">
+                    <div class="process__step-number">04</div>
+                    <h3>Jour J</h3>
+                    <p>Profitez, on s'occupe de tout !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta__bg"></div>
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Parlons de votre <span class="text-gradient">projet</span></h2>
+                <p class="cta__text">Contactez-nous pour un devis personnalisé</p>
+                <div class="cta__buttons">
+                    <a href="contact.html" class="btn btn--primary btn--large">
+                        <span>Demander un devis</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:0747203436" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone"></i>
+                        <span>07 47 20 34 36</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo-container logo-container--footer">
+                            <img src="assets/logo.png" alt="Cercle Sportif N'Kredji">
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Un espace unique alliant gastronomie, sport et événements
+                        d'exception au cœur de Bingerville.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="combat.html">Sports de Combat</a></li>
+                        <li><a href="evenements.html">Événements</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="restaurant.html">Réservation restaurant</a></li>
+                        <li><a href="tennis.html">Cours de tennis</a></li>
+                        <li><a href="combat.html">Cours de boxe</a></li>
+                        <li><a href="evenements.html">Organisation événements</a></li>
+                        <li><a href="evenements.html#location">Location d'espace</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__contact-list">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Bingerville, Côte d'Ivoire</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:0747203436">07 47 20 34 36</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Ouvert jusqu'à 23h30</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <a href="https://chezfrancoisbingerville.com" target="_blank">chezfrancoisbingerville.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cercle Sportif N'Kredji - Chez François. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
